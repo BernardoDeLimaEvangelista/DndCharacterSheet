@@ -14,7 +14,7 @@
                         StrokeShape="RoundRectangle 10">
 
                 <VerticalStackLayout Padding="20" Spacing="20">
-                    <Label Text="CHARACTER MANCER" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" TextColor="Maroon"/>
+                    <Label Text="CHARACTER BUILDER" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" TextColor="Maroon"/>
                     <BoxView HeightRequest="2" Color="Black"/>
                     <Label Text="Configurações de Criação" FontSize="18" FontAttributes="Bold" TextColor="Black"/>
 
@@ -199,14 +199,42 @@
             </ScrollView>
         </Grid>
         <HorizontalStackLayout Grid.Row="1" BackgroundColor="#1c1b1b">
-            <Button WidthRequest="100" HeightRequest="80" Text="Core" Background="#292727" TextColor="AntiqueWhite" CornerRadius="0" BorderColor="AntiqueWhite" BorderWidth="1">
-            </Button>
+            <Grid ColumnDefinitions="*, *, *, *" ColumnSpacing="15">
+
+                <HorizontalStackLayout Grid.Column="0" Padding="15, 0, 0, 0">
+                    <Button HeightRequest="70" Text="Sheets" Background="#292727" TextColor="AntiqueWhite" CornerRadius="45" BorderColor="AntiqueWhite" BorderWidth="1">
+                    </Button>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout Grid.Column="1">
+                    <Button WidthRequest="100" HeightRequest="80" Text="Core" Background="#292727" TextColor="AntiqueWhite" CornerRadius="0" BorderColor="AntiqueWhite" BorderWidth="1">
+                    </Button>
+                    <Button WidthRequest="100" HeightRequest="80" Text="Bio" Background="#292727" TextColor="AntiqueWhite" CornerRadius="0" BorderColor="AntiqueWhite" BorderWidth="1">
+                    </Button>
+                    <Button WidthRequest="100" HeightRequest="80" Text="Spells" Background="#292727" TextColor="AntiqueWhite" CornerRadius="0" BorderColor="AntiqueWhite" BorderWidth="1">
+                    </Button>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout Grid.Column="2">
+                    <Button WidthRequest="100" HeightRequest="80" Text="d4" Background="#292727" TextColor="AntiqueWhite" CornerRadius="0" BorderColor="AntiqueWhite" BorderWidth="1" Margin="5">
+                    </Button>
+                    <Button WidthRequest="100" HeightRequest="80" Text="d6" Background="#292727" TextColor="AntiqueWhite" CornerRadius="0" BorderColor="AntiqueWhite" BorderWidth="1" Margin="5">
+                    </Button>
+                    <Button WidthRequest="100" HeightRequest="80" Text="d8" Background="#292727" TextColor="AntiqueWhite" CornerRadius="0" BorderColor="AntiqueWhite" BorderWidth="1" Margin="5">
+                    </Button>
+                    <Button WidthRequest="100" HeightRequest="80" Text="d10" Background="#292727" TextColor="AntiqueWhite" CornerRadius="0" BorderColor="AntiqueWhite" BorderWidth="1" Margin="5">
+                    </Button>
+                    <Button WidthRequest="100" HeightRequest="80" Text="d12" Background="#292727" TextColor="AntiqueWhite" CornerRadius="0" BorderColor="AntiqueWhite" BorderWidth="1" Margin="5">
+                    </Button>
+                    <Button WidthRequest="100" HeightRequest="80" Text="d20" Background="#292727" TextColor="AntiqueWhite" CornerRadius="0" BorderColor="AntiqueWhite" BorderWidth="1" Margin="5">
+                    </Button>
+                    <Button WidthRequest="100" HeightRequest="80" Text="d100" Background="#292727" TextColor="AntiqueWhite" CornerRadius="0" BorderColor="AntiqueWhite" BorderWidth="1" Margin="5">
+                    </Button>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout Grid.Column="3">
+                    
+                </HorizontalStackLayout>
+
+            </Grid>
             
-            <Button WidthRequest="100" HeightRequest="70" Text="Core" Background="#292727" TextColor="AntiqueWhite" CornerRadius="0">
-            </Button>
-            
-            <Button WidthRequest="100" HeightRequest="70" Text="Core" Background="#292727" TextColor="AntiqueWhite" CornerRadius="0">
-            </Button>
         </HorizontalStackLayout>
     </Grid>
 </ContentPage>
