@@ -177,6 +177,8 @@
                                 <VerticalStackLayout>
                                     <Label Text="PONTOS DE VIDA ATUAIS" FontSize="10" HorizontalOptions="Center" FontAttributes="Bold" TextColor="Black"/>
                                     <Entry Placeholder="25 / 25" HorizontalTextAlignment="Center" FontSize="24" TextColor="Maroon" FontAttributes="Bold"/>
+                                    <Label Text="PONTOS DE VIDA TEMPORARIOS" FontSize="10" HorizontalOptions="Center" FontAttributes="Bold" TextColor="Black"/>
+                                    <Entry Placeholder="25 / 25" HorizontalTextAlignment="Center" FontSize="24" TextColor="Maroon" FontAttributes="Bold"/>
                                 </VerticalStackLayout>
                             </Border>
 
@@ -191,7 +193,7 @@
                         <VerticalStackLayout Grid.Column="3" Spacing="15">
                             <Border StrokeShape="RoundRectangle 5" Padding="0" Stroke="Black" StrokeThickness="2" BackgroundColor="White" WidthRequest="250" HeightRequest="400" HorizontalOptions="Start" Margin="0, 10, 0, 0">
                                 <VerticalStackLayout>
-                                    <Label Text="CHARACTERISTICS" TextColor="Black" HeightRequest="40" HorizontalOptions="Center" FontSize="16" FontAttributes="Bold" VerticalOptions="Start" Padding="5">
+                                    <Label Text="CHARACTERISTICS" TextColor="Black" HeightRequest="40" HorizontalOptions="Center" FontSize="16" FontAttributes="Bold" VerticalOptions="Start" Padding="0, 10, 0, 0">
                                     </Label>
                                     <Border StrokeShape="RoundRectangle 10" Padding="10" StrokeThickness="2" Stroke="Black" BackgroundColor="LightGray" HeightRequest="85" WidthRequest="225" Margin="2">
                                         <VerticalStackLayout>
@@ -252,7 +254,10 @@
                     </Button>
                 </HorizontalStackLayout>
                 <HorizontalStackLayout Grid.Column="3">
-                    
+                    <Button WidthRequest="110" HeightRequest="80" Text="Descanso L." Background="#292727" TextColor="AntiqueWhite" CornerRadius="0" BorderColor="AntiqueWhite" BorderWidth="1" Margin="5">
+                    </Button>
+                    <Button WidthRequest="110" HeightRequest="80" Text="Descanso C." Background="#292727" TextColor="AntiqueWhite" CornerRadius="0" BorderColor="AntiqueWhite" BorderWidth="1" Margin="5">
+                    </Button>
                 </HorizontalStackLayout>
 
             </Grid>
