@@ -188,6 +188,20 @@
                                     <Entry Placeholder="25 / 25" HorizontalTextAlignment="Center" FontSize="24" TextColor="Maroon" FontAttributes="Bold"/>
                                     <Label Text="PONTOS DE VIDA TEMPORARIOS" FontSize="10" HorizontalOptions="Center" FontAttributes="Bold" TextColor="Black"/>
                                     <Entry Placeholder="25 / 25" HorizontalTextAlignment="Center" FontSize="24" TextColor="Maroon" FontAttributes="Bold"/>
+                                    <HorizontalStackLayout HorizontalOptions="Center">
+                                        <Border StrokeShape="RoundRectangle 5" WidthRequest="110" HeightRequest="70" Stroke="Black" StrokeThickness="2">
+                                            <VerticalStackLayout VerticalOptions="Center">
+                                                <Entry Placeholder="10" FontSize="18" HorizontalOptions="Center" FontAttributes="Bold" TextColor="Black" MaxLength="2"/>
+                                                <Label Text="Dados de Vida" FontSize="12" HorizontalOptions="Center" TextColor="Black" FontAttributes="Bold"/>
+                                            </VerticalStackLayout>
+                                        </Border>
+                                        <Border StrokeShape="RoundRectangle 5" WidthRequest="110" HeightRequest="70" Stroke="Black" StrokeThickness="2" >
+                                            <VerticalStackLayout VerticalOptions="Center">
+                                                <Entry Placeholder="10" FontSize="18" HorizontalOptions="Center" FontAttributes="Bold" TextColor="Black" MaxLength="2"/>
+                                                <Label Text="Dados de Morte" FontSize="12" HorizontalOptions="Center" TextColor="Black" FontAttributes="Bold"/>
+                                            </VerticalStackLayout>
+                                        </Border>
+                                    </HorizontalStackLayout>
                                 </VerticalStackLayout>
                             </Border>
 
