@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DndCharacterSheet.MainPage"
              BackgroundColor="#f5f4f2">
-    <Grid ColumnDefinitions="*" RowDefinitions="*, 75">
+    <Grid ColumnDefinitions="*" RowDefinitions="*, 100">
         <Grid ColumnDefinitions="*, *" Grid.Row="0">
 
             <Border Grid.Column="0" 
@@ -174,7 +174,7 @@
                                 </Border>
 
                                 <Border StrokeShape="RoundRectangle 5" WidthRequest="70" HeightRequest="70" Stroke="Black" StrokeThickness="2">
-                                    <VerticalStackLayout VerticalOptions="Center">                                        
+                                    <VerticalStackLayout VerticalOptions="Center">
                                         <Entry Placeholder="10" FontSize="18" HorizontalOptions="Center" FontAttributes="Bold" TextColor="Black" MaxLength="2"/>
                                         <BoxView HeightRequest="1" Color="Black" WidthRequest="30" HorizontalOptions="Center"/>
                                         <Label Text="SPEED" FontSize="8" HorizontalOptions="Center" TextColor="Black" FontAttributes="Bold"/>
@@ -226,51 +226,59 @@
                                     </Border>
                                 </VerticalStackLayout>
                             </Border>
+                            
                         </VerticalStackLayout>
                     </Grid>
                 </VerticalStackLayout>
             </ScrollView>
         </Grid>
-        <HorizontalStackLayout Grid.Row="1" BackgroundColor="#1c1b1b">
-            <Grid ColumnDefinitions="*, *, *, *" ColumnSpacing="15">
+        <HorizontalStackLayout Grid.Row="1" HorizontalOptions="Center">
+            <Border StrokeShape="RoundRectangle 45" BackgroundColor="#292727" WidthRequest="950" HeightRequest="90" HorizontalOptions="Center">
 
-                <HorizontalStackLayout Grid.Column="0" Padding="15, 0, 0, 0">
-                    <Button HeightRequest="70" Text="Sheets" Background="#292727" TextColor="AntiqueWhite" CornerRadius="6" BorderColor="AntiqueWhite" BorderWidth="1">
-                    </Button>
-                </HorizontalStackLayout>
-                <HorizontalStackLayout Grid.Column="1">
-                    <Button WidthRequest="100" HeightRequest="80" Text="Core" Background="#292727" TextColor="AntiqueWhite" CornerRadius="0" BorderColor="AntiqueWhite" BorderWidth="1">
-                    </Button>
-                    <Button WidthRequest="100" HeightRequest="80" Text="Bio" Background="#292727" TextColor="AntiqueWhite" CornerRadius="0" BorderColor="AntiqueWhite" BorderWidth="1">
-                    </Button>
-                    <Button WidthRequest="100" HeightRequest="80" Text="Spells" Background="#292727" TextColor="AntiqueWhite" CornerRadius="0" BorderColor="AntiqueWhite" BorderWidth="1">
-                    </Button>
-                </HorizontalStackLayout>
-                <HorizontalStackLayout Grid.Column="2">
-                    <Button WidthRequest="100" HeightRequest="80" Text="d4" Background="#292727" TextColor="AntiqueWhite" CornerRadius="0" BorderColor="AntiqueWhite" BorderWidth="1" Margin="5">
-                    </Button>
-                    <Button WidthRequest="100" HeightRequest="80" Text="d6" Background="#292727" TextColor="AntiqueWhite" CornerRadius="0" BorderColor="AntiqueWhite" BorderWidth="1" Margin="5">
-                    </Button>
-                    <Button WidthRequest="100" HeightRequest="80" Text="d8" Background="#292727" TextColor="AntiqueWhite" CornerRadius="0" BorderColor="AntiqueWhite" BorderWidth="1" Margin="5">
-                    </Button>
-                    <Button WidthRequest="100" HeightRequest="80" Text="d10" Background="#292727" TextColor="AntiqueWhite" CornerRadius="0" BorderColor="AntiqueWhite" BorderWidth="1" Margin="5">
-                    </Button>
-                    <Button WidthRequest="100" HeightRequest="80" Text="d12" Background="#292727" TextColor="AntiqueWhite" CornerRadius="0" BorderColor="AntiqueWhite" BorderWidth="1" Margin="5">
-                    </Button>
-                    <Button WidthRequest="100" HeightRequest="80" Text="d20" Background="#292727" TextColor="AntiqueWhite" CornerRadius="0" BorderColor="AntiqueWhite" BorderWidth="1" Margin="5">
-                    </Button>
-                    <Button WidthRequest="100" HeightRequest="80" Text="d100" Background="#292727" TextColor="AntiqueWhite" CornerRadius="0" BorderColor="AntiqueWhite" BorderWidth="1" Margin="5">
-                    </Button>
-                </HorizontalStackLayout>
-                <HorizontalStackLayout Grid.Column="3">
-                    <Button WidthRequest="110" HeightRequest="80" Text="Descanso L." Background="#292727" TextColor="AntiqueWhite" CornerRadius="0" BorderColor="AntiqueWhite" BorderWidth="1" Margin="5">
-                    </Button>
-                    <Button WidthRequest="110" HeightRequest="80" Text="Descanso C." Background="#292727" TextColor="AntiqueWhite" CornerRadius="0" BorderColor="AntiqueWhite" BorderWidth="1" Margin="5">
-                    </Button>
+                <HorizontalStackLayout Padding="15, 0, 0, 0">
+
+                    <ImageButton HeightRequest="55" WidthRequest="55" Background="#2c3e50" CornerRadius="27" Source="" Margin="5">
+                    </ImageButton>
+                    
+                    <ImageButton HeightRequest="55" WidthRequest="55" Background="#2c3e50" CornerRadius="27" Source="" Margin="5">
+                    </ImageButton>
+
+                    <ImageButton HeightRequest="55" WidthRequest="55" CornerRadius="27" Margin="5">
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroupList>
+                                <VisualStateGroup x:Name="CommonStates">
+
+                                    <VisualState x:Name="Normal">
+                                        <VisualState.Setters>
+                                            <Setter Property="BackgroundColor" Value="#2c3e50" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+
+                                    <VisualState x:Name="PointerOver">
+                                        <VisualState.Setters>
+                                            <Setter Property="BackgroundColor" Value="#344b61" />
+                                            <Setter Property="Scale" Value="1.1" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+
+                                    <VisualState x:Name="Pressed">
+                                        <VisualState.Setters>
+                                            <Setter Property="Scale" Value="0.95" />
+                                            <Setter Property="BackgroundColor" Value="#26384a" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+
+                                </VisualStateGroup>
+                            </VisualStateGroupList>
+                        </VisualStateManager.VisualStateGroups>
+                    </ImageButton>
+
+                    <ImageButton HeightRequest="55" WidthRequest="55" Background="#2c3e50" CornerRadius="27" Source="" Margin="5">
+                    </ImageButton>
+
                 </HorizontalStackLayout>
 
-            </Grid>
-            
+            </Border>
         </HorizontalStackLayout>
     </Grid>
 </ContentPage>
