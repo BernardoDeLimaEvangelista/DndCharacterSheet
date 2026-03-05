@@ -152,6 +152,14 @@
                                 </Label>
                             </Border>
 
+                            <HorizontalStackLayout>
+                                <Border StrokeShape="Ellipse" Stroke="Black" StrokeThickness="2" WidthRequest="45" HeightRequest="45" HorizontalOptions="Start" Margin="10, 10, 5, 10">
+                                    <Entry Placeholder="+4" FontSize="16" HorizontalOptions="Center" VerticalOptions="Center" FontAttributes="Bold" TextColor="Black" MaxLength="2"/>
+                                </Border>
+                                <Label Text="Percepição passiva" TextColor="Black" HeightRequest="40" HorizontalOptions="Center" FontSize="18" FontAttributes="Bold">
+                                </Label>
+                            </HorizontalStackLayout>
+
                         </VerticalStackLayout>
 
                         <VerticalStackLayout Grid.Column="2" Spacing="15">
