@@ -27,5 +27,10 @@
                 }
             }
         }
+
+        private async void ImageButton_Clicked(object sender, EventArgs e)
+        {
+            await DisplayAlertAsync("Funcionou!", "Botão Clicado e funcionando!", "OK");
+        }
     }
 }
