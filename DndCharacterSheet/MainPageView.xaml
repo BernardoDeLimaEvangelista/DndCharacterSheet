@@ -35,7 +35,7 @@
                 </Grid.ColumnDefinitions>
 
 
-                <VerticalStackLayout Grid.Column="0" WidthRequest="90" Spacing="10">
+                <VerticalStackLayout Grid.Column="0" WidthRequest="90" Spacing="10"> 
                     <Label Text="ATTRIBUTES" TextColor="Black" HorizontalOptions="Center" FontAttributes="Bold"/>
                     <BoxView HeightRequest="1" Color="Black"/>
 
